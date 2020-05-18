@@ -36,6 +36,8 @@ cargo install cargo-binutils
 rustup component add llvm-tools-preview
 ```
 
+### Create the BIN File
+
 ```
 cargo objcopy --release -- -O binary stm32-test.bin
 ```
