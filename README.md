@@ -1,3 +1,8 @@
+## Dependencies
+
+* [cargo, rustc](https://rustup.rs)
+* `stm32flash` (`brew install stm32flash`, `apt install stm32flash`, etc.)
+
 
 ## Target STM32 Models
 
@@ -43,6 +48,8 @@ cargo objcopy --release -- -O binary stm32-test.bin
 ```
 
 ## Flash the BIN File
+
+On the "black pill" board, hold down the `BOOT0` button, press and release `NRST` (reset button), then let get of `BOOT0` to get into flashing mode.
 
 ```
 stm32flash -b 230400 -w stm32-test.bin -v /dev/cu.SLAB_USBtoUART
