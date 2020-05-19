@@ -11,12 +11,15 @@
 STM32F
 411CEU6
 ```
+[Board Info](https://stm32-base.org/boards/STM32F411CEU6-WeAct-Black-Pill-V2.0)
 
 (I have some of these laying around, not tested yet)
 ```
 STM32F
 103C8T6
 ```
+
+[Board Info](https://stm32-base.org/boards/STM32F103C8T6-Black-Pill)
 
 ## Steps
 
