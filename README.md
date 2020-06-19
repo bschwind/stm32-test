@@ -57,3 +57,31 @@ On the "black pill" board, hold down the `BOOT0` button, press and release `NRST
 ```
 stm32flash -b 230400 -w stm32-test.bin -v /dev/cu.SLAB_USBtoUART
 ```
+
+## Monitor Serial Output
+
+In the spirit of doing everything in Rust, you can install a straightforward serial monitor via Cargo:
+
+```
+cargo install serial-monitor
+```
+
+Simply invoke it with `serial-monitor` and it will begin monitoring the first serial port it finds.
+
+You can also pass it a specific device with
+
+```
+serial-monitor -p /dev/cu.SLAB_USBtoUART
+```
+
+## Makefile
+
+The above commands are encapsulated in a Makefile.
+
+```bash
+# Build and flash the firmware
+make flash
+
+# Monitor the serial output
+make monitor
+```
