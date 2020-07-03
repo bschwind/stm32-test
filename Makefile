@@ -5,4 +5,4 @@ flash:
 	(cargo build --release && cargo objcopy --release -- -O binary stm32-test.bin && stm32flash -b 230400 -w stm32-test.bin -v $(serial-port))
 
 monitor:
-	serial-monitor -b 9600 -p $(serial-port)
+	serial-monitor -b 115200 -p $(serial-port)
